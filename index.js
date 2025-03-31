@@ -4,9 +4,11 @@ const express = require("express");
 require("dotenv").config();
 const bodyParser = require("body-parser");
 
+const dbConnect = require("./config/dbConnect");
 
 const app = express();
 
+dbConnect();
 
 const PORT = 5100;
 
